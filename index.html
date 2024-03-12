@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MN Tube</title>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header >
+        <div class="w-10/12 flex-wrap md:flex-nowrap md:justify-between mx-auto flex justify-center gap-4 xl:justify-between py-5 items-center border-b-2">
+            <div>
+                <img src="images/steak night.png" alt="Logo">
+            </div>
+            <div>
+                <button class="rounded-md py-1.5 px-5 text-black font-medium bg-gray-200" id="sortView">Sort By View</button>
+            </div>
+            <div>
+                <button class="py-2 px-7 bg-red-600 text-white font-semibold tracking-widest rounded-md">Blog</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Content -->
+
+    <main>
+        <!-- Category -->
+        <div class="py-5">
+            <ul class="text-black flex w-11/12 xl:w-5/12 mx-auto xl:justify-evenly flex-wrap justify-evenly gap-4" id="categoryContainer">
+                <li class="category  bg-slate-300 px-5 py-1 rounded-md special">All</li>
+                <li class="category bg-slate-300 px-5 py-1 rounded-md">Music</li>
+                <li class="category bg-slate-300 px-5 py-1 rounded-md">Comedy</li>
+                <li class="category bg-slate-300 px-5 py-1 rounded-md">Drawing</li>
+            </ul>
+        </div>
+
+        <div id="videosContainer" class="p-3 grid justify-center xl:grid-cols-4 xl:w-10/12 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+
+        </div>
+
+        <div id="error404" class="flex items-center justify-center xl:p-36 hidden">
+            <img src="images/error.png" alt="404 Error">
+        </div>
+
+        <div id="loading" class="hidden p-3 py-20 grid justify-center xl:grid-cols-4 xl:w-10/12 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-auto">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+    </main>
+    
+
+    
+    
+    <!-- JavaScript File -->
+    <script src="js/function.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
